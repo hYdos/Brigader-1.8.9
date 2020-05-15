@@ -4,6 +4,7 @@
   "package": "me.hydos.legacybrigadier.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "ChatScreenMixin",
     "CommandManagerMixin"
   ],
   "client": [
