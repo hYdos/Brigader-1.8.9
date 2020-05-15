@@ -1,35 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "legacybrigadier",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Legacy Brigadier",
+  "description": "Brigadier implementation in 1.8.9",
   "authors": [
-    "Me!"
+    "hydos"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/legacybrigadier/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "me.hydos.legacybrigadier.LegacyBrigadier"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "legacybrigadier.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.7.4"
-  },
-  "suggests": {
-    "flamingo": "*"
+    "fabricloader": ">=0.7.4",
+    "minecraft": "1.8.9"
   }
 }
